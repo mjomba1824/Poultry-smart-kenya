@@ -1,0 +1,382 @@
+
+/* =================================
+   POULTRY SMART KENYA
+   MAIN CSS STYLESHEET
+================================= */
+
+/* 1. GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f4;
+    color: #333;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+/* 2. HEADER */
+
+header {
+    background-color: #1e5631;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #f4c95d;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* 3. NAVIGATION BAR */
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f4c95d;
+    color: #1e5631;
+    border-radius: 5px;
+}
+
+/* 4. HOME / HERO SECTION */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(0, 50, 20, 0.75),
+            rgba(0, 50, 20, 0.75)
+        ),
+        url("images/poultry-farm.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #f4c95d;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+/* 5. BUTTONS */
+
+.btn {
+    display: inline-block;
+    background-color: #f4c95d;
+    color: #1e5631;
+    padding: 12px 25px;
+    margin: 8px 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1e5631;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* 6. GENERAL SECTIONS */
+
+.section {
+    padding: 65px 0;
+}
+
+.section:nth-of-type(even) {
+    background-color: #edf3e9;
+}
+
+.section h2 {
+    text-align: center;
+    color: #1e5631;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    color: #1e5631;
+    margin: 15px 0;
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+.section ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+/* 7. CARDS */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(240px, 1fr)
+    );
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    border-bottom: 4px solid #1e5631;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #1e5631;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    color: #b8860b;
+    margin-bottom: 10px;
+}
+
+/* 8. ABOUT SECTION */
+
+#about {
+    background-color: white;
+}
+
+#about ul li {
+    margin-bottom: 8px;
+}
+
+/* 9. PRODUCTS SECTION */
+
+#products .card {
+    text-align: center;
+}
+
+#products .card strong {
+    color: #1e5631;
+}
+
+/* 10. PROFIT CALCULATOR */
+
+#calculator {
+    background-color: #e7f0e4;
+}
+
+#profitForm {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#profitForm label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1e5631;
+}
+
+#profitForm input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#profitForm input:focus {
+    outline: none;
+    border-color: #1e5631;
+    box-shadow: 0 0 5px rgba(30, 86, 49, 0.3);
+}
+
+#profitForm button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+#calculatorResult {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-left: 5px solid #1e5631;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* 11. CONTACT SECTION */
+
+#contact {
+    background-color: white;
+    text-align: center;
+}
+
+#contact p {
+    margin: 12px 0;
+}
+
+#contact a:not(.btn) {
+    color: #1e5631;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:not(.btn):hover {
+    text-decoration: underline;
+}
+
+/* 12. FOOTER */
+
+footer {
+    background-color: #153d24;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* 13. RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 8px;
+    }
+
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    #profitForm {
+        padding: 20px;
+    }
+
+    .btn {
+        margin: 8px 3px;
+    }
+}
+
+/* 14. SMALL PHONE SCREENS */
+
+@media screen and (max-width: 400px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 60px 12px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 7px 0;
+    }
+}
